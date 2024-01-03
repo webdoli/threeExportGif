@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoGL Editor</title>
+    <style>
+        .capture-btn {
+            padding: 10px 10px;
+            font-weight: 500;
+            font-size: .95em;
+        }
+    </style>
     <script type="importmap">
         {
           "imports": {
@@ -22,14 +29,11 @@
 
 </head>
 <body>
-    <button id="capture-start">start record</button>
-    <button id="capture-stop">stop record</button>
+    
     <canvas class="draw" width="1280" height="720"></canvas>
     <!-- <div class="draw" style="width:720px; height:480px; border:1px solid red;"></div> -->
     <script src="./js/gif_render_scene.js" type="module"></script>
-    <div id="ctn">
-      <div>saved img is show below</div>
-      <img id="capture-gif"/>
-    </div>
+    <button id="capture-start" class="capture-btn">start record</button>
+    <button id="capture-stop" class="capture-btn">stop record</button>
 </body>
 </html>
