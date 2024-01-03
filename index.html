@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoGL Editor</title>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+          }
+        }
+      </script>
+
+      <script src="https://unpkg.com/ccapture.js@1.1.0/build/CCapture.all.min.js"></script>
+      <script src="https://unpkg.com/ccapture.js@1.1.0/src/webm-writer-0.2.0.js"></script>
+      <script src="https://unpkg.com/ccapture.js@1.1.0/src/gif.js"></script>
+      <script src="https://unpkg.com/ccapture.js@1.1.0/src/tar.js"></script>
+      <script src="https://unpkg.com/ccapture.js@1.1.0/src/download.js"></script>
+      <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+</head>
+<body>
+    <button id="capture-start">start record</button>
+    <button id="capture-stop">stop record</button>
+    <canvas class="draw" width="1280" height="720"></canvas>
+    <!-- <div class="draw" style="width:720px; height:480px; border:1px solid red;"></div> -->
+    <script src="./js/gif_render_scene.js" type="module"></script>
+    <div id="ctn">
+      <div>saved img is show below</div>
+      <img id="capture-gif"/>
+    </div>
+</body>
+</html>
